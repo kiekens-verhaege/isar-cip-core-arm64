@@ -1,0 +1,25 @@
+header:
+  version: 10
+  includes:
+    - repo: cip-core
+      file: kas-cip.yml
+    - repo: cip-core
+      file: kas/board/qemu-arm64.yml
+    - repo: cip-core
+      file: kas/opt/6.1.yml
+    - repo: cip-core
+      file: kas/opt/rt.yml
+    - repo: cip-core
+      file: kas/opt/bookworm.yml
+    - repo: cip-core
+      file: kas/opt/erofs.yml
+    - repo: cip-core
+      file: kas/opt/ebg-swu.yml
+    - repo: cip-core
+      file: kas/opt/separate-home-partition.yml
+
+repos:
+  meta-demo:
+  cip-core:
+    url: https://gitlab.com/cip-project/cip-core/isar-cip-core.git
+    refspec: master
